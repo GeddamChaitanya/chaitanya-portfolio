@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>G. Chaitanya — AI/ML & GenAI Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ CURSOR GLOW ═══════════════════════════════ -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ═══════════════════════════════ BACKGROUND ═══════════════════════════════ -->
+  <div class="bg-grid"></div>
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">GC<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="assets/resume/chaitanya-resume.pdf" download class="nav-cta">
+      <i class="fas fa-download"></i> Resume
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span> Open to AI/ML Roles
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line">G. Chaitanya</span>
+        <span class="title-sub">AI/ML <span class="amp">&</span> GenAI Engineer</span>
+      </h1>
+      <p class="hero-desc">
+        Building intelligent systems with <span class="hl">RAG pipelines</span>,
+        <span class="hl">LLM workflows</span>, and <span class="hl">Python-based ML</span> —
+        turning cutting-edge AI research into real, working products.
+      </p>
+      <div class="hero-typing">
+        <span class="mono">&gt; </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+        <a href="#contact" class="btn-ghost">Let's Connect</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/chaitanya-geddam-59b999218/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/chaitanyatech77q" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.youtube.com/@ChayTechTalks" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/techwithchay/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:chaitanyatech.77@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <img src="assets/images/profile.jpg" alt="G. Chaitanya" class="avatar-img" onerror="this.style.display='none'; document.querySelector('.avatar-fallback').style.display='flex'" />
+          <div class="avatar-fallback">GC</div>
+        </div>
+      </div>
+      <div class="floating-tags">
+        <span class="ftag ftag-1">RAG</span>
+        <span class="ftag ftag-2">LangChain</span>
+        <span class="ftag ftag-3">Python</span>
+        <span class="ftag ftag-4">GenAI</span>
+        <span class="ftag ftag-5">LLMs</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label">01 / About</div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text glass-card">
+          <p>
+            I'm an <strong>AI/ML & Generative AI Engineer</strong> based in Hyderabad with 3+ years of
+            hands-on experience building Python-based ML systems, REST APIs, and GenAI pipelines.
+          </p>
+          <p>
+            I specialize in <strong>RAG architectures</strong>, <strong>LLM workflows</strong>, and vector search
+            using LangChain and ChromaDB. I love turning complex AI research into practical,
+            working products that solve real problems.
+          </p>
+          <p>
+            Beyond engineering, I run <strong>ChayTech Talks</strong> — a YouTube channel and Instagram
+            presence (<em>@techwithchay</em>) where I break down complex tech concepts so
+            anyone can understand them.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">20+</span>
+              <span class="stat-label">AI/ML Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">5+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-card glass-card">
+            <div class="hc-icon"><i class="fas fa-brain"></i></div>
+            <div>
+              <h4>GenAI Focus</h4>
+              <p>RAG systems, LLM pipelines, prompt engineering, agent workflows</p>
+            </div>
+          </div>
+          <div class="highlight-card glass-card">
+            <div class="hc-icon"><i class="fas fa-code"></i></div>
+            <div>
+              <h4>Full Pipeline</h4>
+              <p>Data → Model → API → Production deployment & documentation</p>
+            </div>
+          </div>
+          <div class="highlight-card glass-card">
+            <div class="hc-icon"><i class="fas fa-video"></i></div>
+            <div>
+              <h4>Tech Creator</h4>
+              <p>Teaching AI/ML concepts to the community via ChayTech Talks</p>
+            </div>
+          </div>
+          <div class="highlight-card glass-card">
+            <div class="hc-icon"><i class="fas fa-search"></i></div>
+            <div>
+              <h4>Open to Work</h4>
+              <p>Actively seeking AI, ML, Data Science & Full-Stack roles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ SKILLS ═══════════════════════════════ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-label">02 / Skills</div>
+      <h2 class="section-title">Technical Stack</h2>
+      <div class="skills-grid">
+
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <i class="fas fa-robot"></i>
+            <h3>GenAI & LLM</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag hot">RAG Architecture</span>
+            <span class="skill-tag hot">LangChain</span>
+            <span class="skill-tag hot">Prompt Engineering</span>
+            <span class="skill-tag">ChromaDB</span>
+            <span class="skill-tag">Agent Workflows</span>
+            <span class="skill-tag">ADK</span>
+            <span class="skill-tag">MCP</span>
+            <span class="skill-tag">Embeddings</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <i class="fas fa-code"></i>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag hot">Python</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">JavaScript (Basic)</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">JSON</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <i class="fas fa-chart-line"></i>
+            <h3>ML & Data</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag hot">Model Training & Eval</span>
+            <span class="skill-tag">Feature Engineering</span>
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">Computer Vision</span>
+            <span class="skill-tag">Data Preprocessing</span>
+            <span class="skill-tag">BLEU Score</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <i class="fas fa-tools"></i>
+            <h3>Tools & Ecosystem</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag hot">Git / GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Jupyter Notebook</span>
+            <span class="skill-tag">Google Colab</span>
+            <span class="skill-tag">API Testing</span>
+            <span class="skill-tag">Technical Docs</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ EXPERIENCE ═══════════════════════════════ -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-label">03 / Experience</div>
+      <h2 class="section-title">Work History</h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="tc-header">
+              <div>
+                <h3>Associate Software Engineer (AI/ML)</h3>
+                <div class="tc-company"><i class="fas fa-building"></i> TCS — Tata Consultancy Services</div>
+              </div>
+              <span class="tc-date">Sep 2024 – Feb 2026</span>
+            </div>
+            <ul class="tc-bullets">
+              <li>Diagnosed and resolved critical bugs in ML pipelines and REST API integrations, reducing debugging turnaround time by <strong>~40%</strong></li>
+              <li>Integrated <strong>5+ ML models</strong> with REST APIs using structured JSON request/response handling, improving pipeline reliability</li>
+              <li>Authored internal technical documentation and troubleshooting guides adopted across the team for ML workflows</li>
+              <li>Maintained clean version control across multiple projects using Git/GitHub with code reviews and issue tracking</li>
+              <li>Engineered reusable debugging templates in Jupyter and VS Code environments, cutting resolution time for recurring runtime issues</li>
+            </ul>
+            <div class="tc-tags">
+              <span>Python</span><span>ML Pipelines</span><span>REST APIs</span><span>Git</span><span>Jupyter</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="tc-header">
+              <div>
+                <h3>AI/ML Data Science Intern</h3>
+                <div class="tc-company"><i class="fas fa-building"></i> TryLogic Soft Solutions AP Pvt Ltd</div>
+              </div>
+              <span class="tc-date">Aug 2023 – Sep 2024</span>
+            </div>
+            <ul class="tc-bullets">
+              <li>Delivered <strong>20+ real-world AI/ML projects</strong> by adapting open-source repositories to new business use cases</li>
+              <li>Built and tested API integrations with proper JSON validation and error handling across <strong>10+ endpoints</strong></li>
+              <li>Developed data extraction and web scraping tools, improving data pipeline reliability for downstream ML tasks</li>
+              <li>Executed structured debugging workflows across NLP, computer vision, and tabular ML projects</li>
+            </ul>
+            <div class="tc-tags">
+              <span>Python</span><span>NLP</span><span>Computer Vision</span><span>APIs</span><span>Data Extraction</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="tc-header">
+              <div>
+                <h3>Freelance AI/ML Project Developer</h3>
+                <div class="tc-company"><i class="fas fa-laptop-code"></i> Independent</div>
+              </div>
+              <span class="tc-date">2022 – Present</span>
+            </div>
+            <ul class="tc-bullets">
+              <li>Independently delivered <strong>20+ academic and client AI/ML projects</strong> across NLP, computer vision, and tabular domains</li>
+              <li>Trained, evaluated, and documented models with reproducible notebooks achieving consistent BLEU/accuracy benchmarks</li>
+              <li>Handled end-to-end pipeline: data cleaning → preprocessing → model training → performance reporting</li>
+            </ul>
+            <div class="tc-tags">
+              <span>End-to-End ML</span><span>NLP</span><span>CV</span><span>Reproducible Notebooks</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ PROJECTS ═══════════════════════════════ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-label">04 / Projects</div>
+      <h2 class="section-title">Featured Work</h2>
+      <div class="projects-grid">
+
+        <div class="project-card glass-card reveal">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-image"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/chaitanyatech77q" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Image Caption Generator</h3>
+          <p>Built a CNN + LSTM deep learning pipeline that automatically generates descriptive captions for images. Trained on Flickr8k dataset (8,000 images) and achieved a BLEU-4 score of 0.52.</p>
+          <div class="project-tags">
+            <span>CNN</span><span>LSTM</span><span>Python</span><span>Flickr8k</span><span>BLEU Score</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-database"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/chaitanyatech77q" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>GenAI RAG System</h3>
+          <p>Designed a document-based QA pipeline using LangChain + ChromaDB with custom embedding strategies for similarity search. Applied prompt engineering to optimize LLM response quality.</p>
+          <div class="project-tags">
+            <span>RAG</span><span>LangChain</span><span>ChromaDB</span><span>Prompt Eng</span><span>LLM</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-robot"></i></div>
+            <div class="project-links">
+              <a href="https://aquamarine-mochi-416574.netlify.app/" target="_blank" title="Live"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3>Agentic AI Roadmap App</h3>
+          <p>Built an interactive React web app mapping out a 12-step Agentic AI Expert Roadmap for 2026. Deployed via Netlify with full responsive design and downloadable PDF version.</p>
+          <div class="project-tags">
+            <span>React</span><span>Agentic AI</span><span>ADK</span><span>MCP</span><span>Netlify</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-plug"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/chaitanyatech77q" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>ML Pipeline API Integrations</h3>
+          <p>Integrated 5+ ML models with REST APIs using structured JSON request/response handling. Built reusable debugging templates and API error handling that reduced turnaround time by ~40%.</p>
+          <div class="project-tags">
+            <span>Python</span><span>REST API</span><span>JSON</span><span>ML Pipelines</span><span>TCS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ CERTIFICATIONS ═══════════════════════════════ -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-label">05 / Certifications</div>
+      <h2 class="section-title">Learning & Credentials</h2>
+      <div class="certs-grid">
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fab fa-google"></i></div>
+          <div class="cert-body">
+            <h4>5-Day Gen AI Intensive Program</h4>
+            <p>Google & Kaggle — AI Agents Track</p>
+          </div>
+          <span class="cert-badge">Google</span>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fab fa-google"></i></div>
+          <div class="cert-body">
+            <h4>Introduction to Generative AI</h4>
+            <p>Google Cloud Skills Boost</p>
+          </div>
+          <span class="cert-badge">Google</span>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="cert-body">
+            <h4>Python & MySQL</h4>
+            <p>NxtWave — Developer Foundations</p>
+          </div>
+          <span class="cert-badge">NxtWave</span>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fas fa-flask"></i></div>
+          <div class="cert-body">
+            <h4>AI & Data Science Internship</h4>
+            <p>TryLogic Soft Solutions AP Pvt Ltd</p>
+          </div>
+          <span class="cert-badge">Industry</span>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fas fa-rocket"></i></div>
+          <div class="cert-body">
+            <h4>5-Day AI Agents Course</h4>
+            <p>Agent fundamentals, memory, observability, production deployment</p>
+          </div>
+          <span class="cert-badge">AI Agents</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ BLOG / YOUTUBE ═══════════════════════════════ -->
+  <section class="section" id="blog">
+    <div class="container">
+      <div class="section-label">06 / Blog & Content</div>
+      <h2 class="section-title">ChayTech Talks</h2>
+      <p class="section-desc">
+        I break down complex AI/ML and tech concepts into simple, visual explanations
+        on YouTube and Instagram. Follow along at <strong>@techwithchay</strong>.
+      </p>
+      <div class="blog-channels">
+        <a href="https://www.youtube.com/@ChayTechTalks" target="_blank" class="channel-card glass-card">
+          <div class="channel-icon yt"><i class="fab fa-youtube"></i></div>
+          <div>
+            <h3>ChayTech Talks</h3>
+            <p>YouTube — AI/ML tutorials, roadmaps, and deep dives</p>
+          </div>
+          <i class="fas fa-arrow-right channel-arrow"></i>
+        </a>
+        <a href="https://www.instagram.com/techwithchay/" target="_blank" class="channel-card glass-card">
+          <div class="channel-icon ig"><i class="fab fa-instagram"></i></div>
+          <div>
+            <h3>@techwithchay</h3>
+            <p>Instagram — Tech carousels, tips, and GenAI content</p>
+          </div>
+          <i class="fas fa-arrow-right channel-arrow"></i>
+        </a>
+      </div>
+      <div class="blog-topics">
+        <h3>Topics I Cover</h3>
+        <div class="topic-tags">
+          <span>Agentic AI</span>
+          <span>RAG Systems</span>
+          <span>LLM Workflows</span>
+          <span>AI Roadmaps</span>
+          <span>Python for ML</span>
+          <span>GenAI Tools</span>
+          <span>Google ADK</span>
+          <span>MCP Protocol</span>
+          <span>Career in AI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ CONTACT ═══════════════════════════════ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-label">07 / Contact</div>
+      <h2 class="section-title">Let's Work Together</h2>
+      <p class="section-desc">I'm actively looking for AI/ML, Data Science, and Full-Stack opportunities.<br />Feel free to reach out — I respond fast! 🚀</p>
+      <div class="contact-grid">
+        <a href="mailto:chaitanyatech.77@gmail.com" class="contact-card glass-card">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h4>Email</h4>
+            <p>chaitanyatech.77@gmail.com</p>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/chaitanya-geddam-59b999218/" target="_blank" class="contact-card glass-card">
+          <i class="fab fa-linkedin"></i>
+          <div>
+            <h4>LinkedIn</h4>
+            <p>chaitanya-geddam-59b999218</p>
+          </div>
+        </a>
+        <a href="https://github.com/chaitanyatech77q" target="_blank" class="contact-card glass-card">
+          <i class="fab fa-github"></i>
+          <div>
+            <h4>GitHub</h4>
+            <p>chaitanyatech77q</p>
+          </div>
+        </a>
+        <a href="tel:+917729934148" class="contact-card glass-card">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h4>Phone</h4>
+            <p>+91 77299 34148</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">GC<span class="dot">.</span></span>
+      <p>© 2026 G. Chaitanya · Built with 💙 · Hyderabad, India</p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/chaitanya-geddam-59b999218/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/chaitanyatech77q" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.youtube.com/@ChayTechTalks" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/techwithchay/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
